@@ -1,0 +1,49 @@
+<html ng-app="gameapp">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="app.js" type="text/javascript"></script>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<title>Games API</title>
+
+
+
+<body ng-controller="mainController">
+<div>
+  <h2>
+
+    Enter Max Players: <input type="number" ng-model="maxplayers">
+
+
+    Enter Min Players: <input type="number" ng-model="minplayers">
+
+
+    Enter Playing Time: <input type="number" ng-model="playingtime">
+</div>
+<br><br><br><br><br>
+Games List:
+
+  </h2>
+
+  <ul>
+    <li ng-repeat="game in games"><a>
+      {{ game.objectname }}
+    </a></li>
+  </ul>
+
+<button ng-click="num = RandomNum()">
+Pick Random Game From List
+</button>
+<span>{{games[num].objectname}}</span>
+
+
+
+
+
+</body>
+
+
+
+</html>
