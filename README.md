@@ -1,2 +1,2 @@
-# gameapp
-CISC 474 game app project
+# redditclone
+CISC 474 reddit clone app project
